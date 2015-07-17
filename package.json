@@ -13,9 +13,13 @@
     "build": "npm run clean && npm run build-css && npm run build-html && npm run build-js",
     "build-css": "cssnext css/app.css dist/app.css",
     "build-html": "jade --out dist html/index.jade",
-    "build-js": "browserify js/app.js --transform babelify --outfile dist/app.js",
+    "build-js": "browserify js/app.js --transform babelify > dist/app.js",
     "clean": "rimraf dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "watch": "npm run watch-css & npm run watch-html & npm run watch-js",
+    "watch-css": "cssnext --verbose --watch --sourcemap css/app.css dist/app.css",
+    "watch-html": "jade --watch --out dist html/index.jade",
+    "watch-js": "watchify js/app.js --transform babelify --outfile dist/app.js -dv"
   },
   "repository": {
     "type": "git",
