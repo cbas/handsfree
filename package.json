@@ -4,7 +4,8 @@
   "description": "Voice control for web apps.",
   "main": "dist/app.js",
   "scripts": {
-    "start": "npm run build && http-server dist -o",
+    "dev": "npm run clean && npm run watch & http-server dist -c-1 -o",
+    "start": "npm run build && http-server dist",
     "test": "npm run lint && npm run test-js",
     "test-js": "mocha",
     "lint": "npm run lint-js && npm run lint-css",

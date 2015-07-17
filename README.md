@@ -14,4 +14,7 @@ npm test
 
 # keep re-building while coding
 npm run watch
+
+# like watch, but also serve on non-caching server and open in browser
+npm run dev
 ```
