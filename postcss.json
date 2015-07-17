@@ -1,0 +1,15 @@
+{
+  "use": [
+    "stylelint",
+    "postcss-reporter"
+  ],
+  "input": "css/app.css",
+  "output": "/dev/null",
+  "stylelint": {
+    "rules": {
+    }
+  },
+  "postcss-reporter": {
+    "clearMessages": true
+  }
+}
