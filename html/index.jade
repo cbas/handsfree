@@ -2,8 +2,9 @@ doctype html
 html
   head
     title handsfree
-    script(src='app.js')
     link(rel='stylesheet', href='app.css')
+    script(src='app.js', defer)
   body
     textarea
-    button Start Voice Control
+    button.start Start Voice Control
+    button.stop Stop Voice Control
