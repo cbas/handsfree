@@ -12,4 +12,12 @@ domready(() => {
     .addEventListener('click', event => {
       handsfree.stop()
     })
+  document.query('button.clear')
+    .addEventListener('click', event => {
+      document.query('textarea').value = ''
+    })
+  document.query('button.test')
+    .addEventListener('click', event => {
+      window.alert('Success!')
+    })
 })

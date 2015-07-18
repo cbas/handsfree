@@ -4,7 +4,19 @@ html
     title handsfree
     link(rel='stylesheet', href='app.css')
     script(src='app.js', defer)
+
   body
-    textarea
-    button.start Start Voice Control
-    button.stop Stop Voice Control
+
+    section
+      textarea
+      button.start Start Voice Control
+      button.stop Stop Voice Control
+      button.clear Clear
+
+    p
+      | Try it out, say "hello".
+      button.test Hello
+
+    p
+      | Or go check out my blog by saying "ninja".
+      a(href='https://ninja.sg') Ninja
